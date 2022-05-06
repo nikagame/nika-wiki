@@ -1,0 +1,6 @@
+[book]
+authors = ["Nika"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Nika Wiki"
