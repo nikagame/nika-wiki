@@ -61,4 +61,3 @@ Game in Nika is a form of play in predefined set of time which player try to gue
 minConfirmation = ((amountInMojo / 10000000000000) + 2) * 10
 Divide operation executed as integer division, which means the result is floored.
 ```
-
