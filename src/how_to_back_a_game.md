@@ -37,7 +37,7 @@ After you decide how many XCH you will send, hopefully, the bot has already come
 - Wait for the transaction to become "Confirmed".
 
 # Monitor the transaction
-As stated in the [rules](/game_rules.html#9-transaction-confirmations), all transaction need some confirmation before it's get accepted. You could monitor this at "LAST 20 TRANSACTIONS" on the home screen of nika-play.com.
+As stated in the [rules](/nika-wiki/game_rules.html#9-transaction-confirmations), all transaction need some confirmation before it's get accepted. You could monitor this at "LAST 20 TRANSACTIONS" on the home screen of nika-play.com.
 
 This means our transaction needs ten confirmations before it gets accepted. If another transaction already buries your transaction, you could always search it. The most straightforward term to search is the "To Address" since we know where we sent our fund in advance.
 

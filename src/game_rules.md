@@ -15,7 +15,7 @@ Game in Nika is a form of play in predefined set of time which player try to gue
 # 3. Result
 1. Each game would output three pairs of a 4-digit number and one 1-digit number. We call the resulted pair as FirstNumber, SecondNumber, and ThirdNumber. And one 1-digit number is called JackpotNumber.
 2. Each result pair could have duplicated a 4-digit number.
-3. Result is calculated using [provably fair](/provably_fair.html) algorithm based on Chia blockchain's Coin ID.
+3. Result is calculated using [provably fair](/nika-wiki/provably_fair.html) algorithm based on Chia blockchain's Coin ID.
 # 4. Win Condition
 1. Player is declared the winner if their ticket's number matches the game result.
 2. There is four types of a winner, FirstWinner, SecondWinner, ThirdWinner, and JackpotWinner.
@@ -33,7 +33,7 @@ Game in Nika is a form of play in predefined set of time which player try to gue
 5. When there are multiple FirstWinner, SecondWinner, and ThirdWinner in one game, each of them would be rewarded the full amount according to their winning type.
 6. When there are multiple JackpotWinner in one game, the reward from Jackpot Pool Prize would be distributed equally among JackpotWinners.
 7. Every prize is immediately sent to the winner's payout address after the game end.
-8. At the end of each game, the jackpot pool prize is calculated first according to [Ticket Sales Allocation](/ticket_sales_allocation.html), then distributed to the JackpotWinners for that game, if there are any.
+8. At the end of each game, the jackpot pool prize is calculated first according to [Ticket Sales Allocation](/nika-wiki/ticket_sales_allocation.html), then distributed to the JackpotWinners for that game, if there are any.
 # 6. Backer
 1. Each game needs at least one eligible backer to be started. When there is none, then the game will not start.
 2. Backer is declared eligible when they commit 6000000000000 Mojo (6 XCH) or more.

@@ -9,7 +9,7 @@ List of all backers for this game that are eligible. This report shows their pro
 ## Ineligible Backer Sheet
 List of all backers for this game that are ineligible. This report shows their balance when this game started and their withdrawal if any.
 ## Ticket Sheet
-List of all tickets purchased during this game. It's sorted like when used for calculating game [result](/provably_fair.html).
+List of all tickets purchased during this game. It's sorted like when used for calculating game [result](/nika-wiki/provably_fair.html).
 ## Reserved Ticket Sheet
 List of all reserved tickets that were created during this game or the game before. This list will be used in the next game to purchase tickets in the next game automatically.
 ## Winner Sheet
