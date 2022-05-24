@@ -3,7 +3,7 @@
 This guide uses a game with ID: 123231, but you could use any game you like.
 
 # Download the game's report
-- At the "Past Games" section of nika.com, enter the desired Game ID in the provided textbox.
+- At the "Past Games" section of nika-play.com, enter the desired Game ID in the provided textbox.
 - Click the "Download Report" button to download the report.
 
 # Populate CoinID

@@ -27,9 +27,9 @@ My soul urge would define my personality
 You would pick 6852 as a 4-digit number and 6 as a 1-digit jackpot number. Let's proceed with that.
 
 # Check the number availability
-Before you buy that killer ticket, it is advised that you check if the number is already reserved or not. So you can manage your expectation and the timing for your luck. To do so, you could go to the "Reserved Ticket" section on nika.com.
+Before you buy that killer ticket, it is advised that you check if the number is already reserved or not. So you can manage your expectation and the timing for your luck. To do so, you could go to the "Reserved Ticket" section on nika-play.com.
 
-<p><img src="images/test_picture.jpg" alt="Reserved Ticket" /></p>
+<!-- <p><img src="images/test_picture.jpg" alt="Reserved Ticket" /></p> -->
 
 Nice! There is no other human being named John Lucky Doe who came to this world at the start of the millennium. Or, he doesn't use the right tool as you do!
 
@@ -38,9 +38,9 @@ Anyway, suppose your other killer number happens to be reserved by another playe
 # Buy the ticket
 
 ## Get the Chia Address for the number
-At the top of nika.com, you will see the "BUY YOUR TICKET NOW" box. Input our 4-digit number in the "NUMBER" textbox and our 1-digit number in the "JACKPOT" textbox. And press the "BUY TICKET" button afterward. Copy the resulted address.
+At the top of nika-play.com, you will see the "BUY YOUR TICKET NOW" box. Input our 4-digit number in the "NUMBER" textbox and our 1-digit number in the "JACKPOT" textbox. And press the "BUY TICKET" button afterward. Copy the resulted address.
 
-![](images/testing-test.gif)
+<!-- ![](images/testing-test.gif) -->
 
 ## Send your XCH with Chia Wallet
 - Go to the "SEND" tab in your wallet. 
@@ -50,12 +50,12 @@ At the top of nika.com, you will see the "BUY YOUR TICKET NOW" box. Input our 4-
 - Wait for the transaction to become "Confirmed".
 
 # Monitor the transaction
-As stated in the [rules](/game_rules.html#9-transaction-confirmations), all transaction need some confirmation before it's get accepted. You could monitor this at "LAST 20 TRANSACTIONS" on the home screen of nika.com.
+As stated in the [rules](/game_rules.html#9-transaction-confirmations), all transaction need some confirmation before it's get accepted. You could monitor this at "LAST 20 TRANSACTIONS" on the home screen of nika-play.com.
 
 This means our transaction needs 10 confirmations before it gets accepted. If your transaction is already buried by another transaction, you could always search it. The most straightforward term to search is the "To Address" since we know where our fund is sent in advance.
 
 # Verify your ticket
-When your transaction has already been accepted, you should see your ticket at "LAST 20 TICKETS" on the home screen of nika.com. You could search for it too if you want.
+When your transaction has already been accepted, you should see your ticket at "LAST 20 TICKETS" on the home screen of nika-play.com. You could search for it too if you want.
 
 Since current game's [SlotPerNumber](/game_rules.html#7-slotpernumber) is 1, you would only see 1 ticket at this game. You could verify another 9 tickets are reserved for you by going to the "Reserved Ticket" section and searching "6852" in the provided textbox. And then you could come back at the next game to see your ticket automatically purchased for you.
 
