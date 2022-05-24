@@ -145,14 +145,14 @@
                     <main>
                         <h1 id="provably-fair"><a class="header" href="#provably-fair">Provably Fair</a></h1>
 <p>Anyone can repeatedly calculate every result in Nika games, but the result is always consistent. There's no way to know the outcome of future games, hence Provably Fair.</p>
-<p>As stated in the <a href="/game_rules.html#2-ticket">rules</a>, a player must buy a ticket to participate in Nika games. Ticket purchasing happens in the Chia blockchain, which produces a unique Coin ID. So each game will have its own set of Coin IDs. To calculate the game result, one has to append all the Coin IDs for the said game (in hex format, with 0x prefix), then hash it with SHA-256. Take the hash result in decimal representation, and then:</p>
+<p>As stated in the <a href="/nika-wiki/game_rules.html#2-ticket">rules</a>, a player must buy a ticket to participate in Nika games. Ticket purchasing happens in the Chia blockchain, which produces a unique Coin ID. So each game will have its own set of Coin IDs. To calculate the game result, one has to append all the Coin IDs for the said game (in hex format, with 0x prefix), then hash it with SHA-256. Take the hash result in decimal representation, and then:</p>
 <ul>
 <li>FirstNumber = First to the fourth character of the result.</li>
 <li>SecondNumber = Fifth to the eighth character of the result.</li>
 <li>ThirdNumber = Ninth to the twelfth character of the result.</li>
 <li>JackpotNumber = Thirteenth character of the result.</li>
 </ul>
-<p>Learn how to prove it <a href="/how_to_calculate_game_result.html">here</a>.</p>
+<p>Learn how to prove it <a href="/nika-wiki/how_to_calculate_game_result.html">here</a>.</p>
 
                     </main>
 

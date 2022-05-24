@@ -167,7 +167,7 @@
 <ol>
 <li>Each game would output three pairs of a 4-digit number and one 1-digit number. We call the resulted pair as FirstNumber, SecondNumber, and ThirdNumber. And one 1-digit number is called JackpotNumber.</li>
 <li>Each result pair could have duplicated a 4-digit number.</li>
-<li>Result is calculated using <a href="/provably_fair.html">provably fair</a> algorithm based on Chia blockchain's Coin ID.</li>
+<li>Result is calculated using <a href="/nika-wiki/provably_fair.html">provably fair</a> algorithm based on Chia blockchain's Coin ID.</li>
 </ol>
 <h1 id="4-win-condition"><a class="header" href="#4-win-condition">4. Win Condition</a></h1>
 <ol>
@@ -189,7 +189,7 @@
 <li>When there are multiple FirstWinner, SecondWinner, and ThirdWinner in one game, each of them would be rewarded the full amount according to their winning type.</li>
 <li>When there are multiple JackpotWinner in one game, the reward from Jackpot Pool Prize would be distributed equally among JackpotWinners.</li>
 <li>Every prize is immediately sent to the winner's payout address after the game end.</li>
-<li>At the end of each game, the jackpot pool prize is calculated first according to <a href="/ticket_sales_allocation.html">Ticket Sales Allocation</a>, then distributed to the JackpotWinners for that game, if there are any.</li>
+<li>At the end of each game, the jackpot pool prize is calculated first according to <a href="/nika-wiki/ticket_sales_allocation.html">Ticket Sales Allocation</a>, then distributed to the JackpotWinners for that game, if there are any.</li>
 </ol>
 <h1 id="6-backer"><a class="header" href="#6-backer">6. Backer</a></h1>
 <ol>
@@ -227,14 +227,14 @@ Divide operation executed as integer division, which means the result is floored
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="provably-fair"><a class="header" href="#provably-fair">Provably Fair</a></h1>
 <p>Anyone can repeatedly calculate every result in Nika games, but the result is always consistent. There's no way to know the outcome of future games, hence Provably Fair.</p>
-<p>As stated in the <a href="/game_rules.html#2-ticket">rules</a>, a player must buy a ticket to participate in Nika games. Ticket purchasing happens in the Chia blockchain, which produces a unique Coin ID. So each game will have its own set of Coin IDs. To calculate the game result, one has to append all the Coin IDs for the said game (in hex format, with 0x prefix), then hash it with SHA-256. Take the hash result in decimal representation, and then:</p>
+<p>As stated in the <a href="/nika-wiki/game_rules.html#2-ticket">rules</a>, a player must buy a ticket to participate in Nika games. Ticket purchasing happens in the Chia blockchain, which produces a unique Coin ID. So each game will have its own set of Coin IDs. To calculate the game result, one has to append all the Coin IDs for the said game (in hex format, with 0x prefix), then hash it with SHA-256. Take the hash result in decimal representation, and then:</p>
 <ul>
 <li>FirstNumber = First to the fourth character of the result.</li>
 <li>SecondNumber = Fifth to the eighth character of the result.</li>
 <li>ThirdNumber = Ninth to the twelfth character of the result.</li>
 <li>JackpotNumber = Thirteenth character of the result.</li>
 </ul>
-<p>Learn how to prove it <a href="/how_to_calculate_game_result.html">here</a>.</p>
+<p>Learn how to prove it <a href="/nika-wiki/how_to_calculate_game_result.html">here</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="backer"><a class="header" href="#backer">Backer</a></h1>
 <p>Anyone could become a backer in Nika's game as long as they have at least 6000000000000 Mojo (6 XCH). As you may already guess, the amount of 6 XCH comes up from the sum of the prizes (excluding JackpotPrize). Backers guarantee the winner gets the compensation they deserve.</p>
 <p>For their committed XCH in each game, a backer would get the reward. All the backers would get a share of ticket sales of the game they backed. Share percentage can be seen at <a href="/nika-wiki/ticket_sales_allocation.html">Ticket Sales Allocation</a>. And that amount will be distributed among backers according to their contribution. Although, there is some game when ticket sales won't cover the amount of the prizes. If that happens, then backers committed amount would be cut proportionally according to their contribution. That means some eligible backers in the current game may be ineligible at the next game.</p>
@@ -248,7 +248,7 @@ Divide operation executed as integer division, which means the result is floored
 <h2 id="ineligible-backer-sheet"><a class="header" href="#ineligible-backer-sheet">Ineligible Backer Sheet</a></h2>
 <p>List of all backers for this game that are ineligible. This report shows their balance when this game started and their withdrawal if any.</p>
 <h2 id="ticket-sheet"><a class="header" href="#ticket-sheet">Ticket Sheet</a></h2>
-<p>List of all tickets purchased during this game. It's sorted like when used for calculating game <a href="/provably_fair.html">result</a>.</p>
+<p>List of all tickets purchased during this game. It's sorted like when used for calculating game <a href="/nika-wiki/provably_fair.html">result</a>.</p>
 <h2 id="reserved-ticket-sheet"><a class="header" href="#reserved-ticket-sheet">Reserved Ticket Sheet</a></h2>
 <p>List of all reserved tickets that were created during this game or the game before. This list will be used in the next game to purchase tickets in the next game automatically.</p>
 <h2 id="winner-sheet"><a class="header" href="#winner-sheet">Winner Sheet</a></h2>
@@ -295,19 +295,19 @@ My soul urge would define my personality
 <ul>
 <li>Go to the &quot;SEND&quot; tab in your wallet. </li>
 <li>Paste the address you get from the previous step in the &quot;Address / Puzzle hash&quot; textbox.</li>
-<li>The price for one ticket is <a href="/game_rules.html#2-ticket">0.001 XCH</a>, so if you want to buy 10 tickets for this number, you will input 0.01 in the &quot;Amount&quot; textbox.</li>
+<li>The price for one ticket is <a href="/nika-wiki/game_rules.html#2-ticket">0.001 XCH</a>, so if you want to buy 10 tickets for this number, you will input 0.01 in the &quot;Amount&quot; textbox.</li>
 <li>As for now, there's no definite guide to setting acceptable fees in Chia. According to this <a href="https://github.com/Chia-Network/chia-blockchain/discussions/10379#discussioncomment-2231974">comment</a>, and <a href="https://github.com/Chia-Network/chia-blockchain/blob/d87b8ac08766c9cbb4f4577a4819bb592f63123c/chia/full_node/mempool_manager.py#L99">comment in the codebase</a>, it's safe to input 0.00005 as the fee to make sure our transaction get through.</li>
 <li>Wait for the transaction to become &quot;Confirmed&quot;.</li>
 </ul>
 <h1 id="monitor-the-transaction"><a class="header" href="#monitor-the-transaction">Monitor the transaction</a></h1>
-<p>As stated in the <a href="/game_rules.html#9-transaction-confirmations">rules</a>, all transaction need some confirmation before it's get accepted. You could monitor this at &quot;LAST 20 TRANSACTIONS&quot; on the home screen of nika-play.com.</p>
+<p>As stated in the <a href="/nika-wiki/game_rules.html#9-transaction-confirmations">rules</a>, all transaction need some confirmation before it's get accepted. You could monitor this at &quot;LAST 20 TRANSACTIONS&quot; on the home screen of nika-play.com.</p>
 <p>This means our transaction needs 10 confirmations before it gets accepted. If your transaction is already buried by another transaction, you could always search it. The most straightforward term to search is the &quot;To Address&quot; since we know where our fund is sent in advance.</p>
 <h1 id="verify-your-ticket"><a class="header" href="#verify-your-ticket">Verify your ticket</a></h1>
 <p>When your transaction has already been accepted, you should see your ticket at &quot;LAST 20 TICKETS&quot; on the home screen of nika-play.com. You could search for it too if you want.</p>
-<p>Since current game's <a href="/game_rules.html#7-slotpernumber">SlotPerNumber</a> is 1, you would only see 1 ticket at this game. You could verify another 9 tickets are reserved for you by going to the &quot;Reserved Ticket&quot; section and searching &quot;6852&quot; in the provided textbox. And then you could come back at the next game to see your ticket automatically purchased for you.</p>
+<p>Since current game's <a href="/nika-wiki/game_rules.html#7-slotpernumber">SlotPerNumber</a> is 1, you would only see 1 ticket at this game. You could verify another 9 tickets are reserved for you by going to the &quot;Reserved Ticket&quot; section and searching &quot;6852&quot; in the provided textbox. And then you could come back at the next game to see your ticket automatically purchased for you.</p>
 <h1 id="wait-for-the-game-to-end"><a class="header" href="#wait-for-the-game-to-end">Wait for the game to end</a></h1>
-<p>Besides waiting, you could do what people suggested <a href="https://www.quora.com/What-is-the-best-method-of-winning-the-lottery-using-spiritual-methods-Please-read-my-comment-below">here</a> (ignore the negative comment!) and then check your Chia Wallet balance afterward. If you did it right and it happened to be one of your many lucky days to win FirstPrize, you would be 3 XCH richer! Now, imagine when the game has 10 <a href="/game_rules.html#7-slotpernumber">SlotPerNumber</a>, you would be 30 XCH richer, just for 0.01 XCH! It means you just double your XCH 3000 times! I love you 3000!</p>
-<p>And yes, we haven't talked about <a href="/game_rules.html#5-prize">JackpotPrize</a> yet, which can be any amount of XCH!</p>
+<p>Besides waiting, you could do what people suggested <a href="https://www.quora.com/What-is-the-best-method-of-winning-the-lottery-using-spiritual-methods-Please-read-my-comment-below">here</a> (ignore the negative comment!) and then check your Chia Wallet balance afterward. If you did it right and it happened to be one of your many lucky days to win FirstPrize, you would be 3 XCH richer! Now, imagine when the game has 10 <a href="/nika-wiki/game_rules.html#7-slotpernumber">SlotPerNumber</a>, you would be 30 XCH richer, just for 0.01 XCH! It means you just double your XCH 3000 times! I love you 3000!</p>
+<p>And yes, we haven't talked about <a href="/nika-wiki/game_rules.html#5-prize">JackpotPrize</a> yet, which can be any amount of XCH!</p>
 <h1 id="keep-trying"><a class="header" href="#keep-trying">Keep trying</a></h1>
 <p>There's a time when lady luck doesn't come in your favor. Keep that chin of yours up! Like the one American Founding Father, Thomas Jefferson, said:</p>
 <pre><code>I'm a great believer in luck, 
@@ -348,7 +348,7 @@ We value privacy and anonymity, so we use Discord as the mean of communication b
 <li>Wait for the transaction to become &quot;Confirmed&quot;.</li>
 </ul>
 <h1 id="monitor-the-transaction-1"><a class="header" href="#monitor-the-transaction-1">Monitor the transaction</a></h1>
-<p>As stated in the <a href="/game_rules.html#9-transaction-confirmations">rules</a>, all transaction need some confirmation before it's get accepted. You could monitor this at &quot;LAST 20 TRANSACTIONS&quot; on the home screen of nika-play.com.</p>
+<p>As stated in the <a href="/nika-wiki/game_rules.html#9-transaction-confirmations">rules</a>, all transaction need some confirmation before it's get accepted. You could monitor this at &quot;LAST 20 TRANSACTIONS&quot; on the home screen of nika-play.com.</p>
 <p>This means our transaction needs ten confirmations before it gets accepted. If another transaction already buries your transaction, you could always search it. The most straightforward term to search is the &quot;To Address&quot; since we know where we sent our fund in advance.</p>
 <p>But, if you don't have time for this, worry none. That excellent bot will inform you when your fund is accepted.</p>
 <h1 id="enjoy-the-profit"><a class="header" href="#enjoy-the-profit">Enjoy the profit</a></h1>
